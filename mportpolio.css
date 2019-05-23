@@ -1,0 +1,120 @@
+﻿/* 스타일 초기화 */
+* { margin: 0px ; padding: 0px ;}
+header, body, footer { font-size: 14px; font-family: 나눔고딕,굴림,돋음,'Times New Roman',serif; width: 100%; }
+header, footer { text-align : center ; }
+body { margin: auto; }
+footer { position: fixed; bottom: 0px; }
+
+/* 공통 스타일 */
+h1 { padding: 15px; font-size: 30px ; color: #FFFFFF;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;}
+h2 { font-size: 15px; color: white; }
+h3 { margin: 10px; font-size: 15px; color: green; text-shadow: 4px 4px 7px green; }
+h1, h2 { background-image: url(bg.jpg); background-repeat: repeat-x; }
+
+img { border: 0; padding: 2px; }
+
+nav { margin: 5px 5px; text-align: center; }
+nav > span > a { font-style: bold; margin: 2px; padding: 11px; border: 2px solid yellow; text-decoration: none; background: green; color: white; }
+nav > span > a:hover { background: #ff00ff; color: white; }
+@media only screen and (min-width: 321px) and (orientation: landscape) {
+	section { width: 80%; float: left; margin-bottom: 50px;}
+	aside { width: 20%; text-align: center; float: right;}
+	footer { clear: both; }
+}
+.content  { width: auto; height: auto; margin: 30px; clear: both; }
+.section1 ul li { list-style-position: inside; list-style-image: url("li.jpg"); }
+
+/* mintro.html 적용 스타일 */
+#intro { text-align: center; margin-left: 30px; margin-left:21%; }
+#stu-pic {  margin-top: 10px;
+				    width: 12em;
+				    height: auto;
+						float: left;
+						box-shadow: 7px 7px 7px 0px #09A447;
+}
+#info { -webkit-column-count: 3;
+				column-rule: 2px solid rgba(9,164,71,0.45);
+}
+
+/* minfo.html 적용 스타일 */
+/*#year-table { table-layout: auto; width: 80%; border-collapse: seperate; }
+#year-table thead { background: #E4F2D0; }*/
+
+#year-table { table-layout: auto;
+						  border: 2px solid #4F7849;
+						  background-color: #EEEEEE;
+						  width: 100%;
+						  text-align: center;
+						  border-collapse: collapse;
+						  font-size: 19px;
+						  margin-top: 10px
+  }
+
+
+#year-table th {
+								  border: 1px solid #4F7849;
+								  padding: 3px 2px;
+}
+#year-table tbody td {
+									height: 35px;
+								  font-weight: bold;
+								  color: #4F7849;
+}
+#year-table tr:nth-child(even) {
+								  background: #CEE0CC;
+}
+#year-table tfoot {
+								  font-size: 21px;
+								  font-weight: bold;
+								  color: #FFFFFF;
+								  background: #4F7849;
+								  background: -moz-linear-gradient(top, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+								  background: -webkit-linear-gradient(top, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+								  background: linear-gradient(to bottom, #7b9a76 0%, #60855b 66%, #4F7849 100%);
+								  border-top: 1px solid #444444;
+}
+#year-table tfoot td {
+							  	font-size: 21px;
+}
+#logo { position: fixed;
+    		top: 250px;
+    		right: 70px;
+    		opacity: 0.3;
+}
+
+/* mstudy.html 적용 스타일 */
+video { margin: 5px; width: 300px; height: 200px; }
+#preview_content{width: 100%;height: 100%;}
+#left {float: left;text-align: center;}
+#preview {width: 430px; height: auto;}
+
+
+/* mcareer.html 적용 스타일 */
+.semi-pic { width: 20em; height: 15em;  }
+#pic-container { overflow: hidden; }
+#pic-container:hover { height: 220px; }
+#pic1:hover { -webkit-transform: translate(150px,50px) scale(7,7); transform: scale(0.5); }
+#pic2:hover { -webkit-transform: translate(100px,50px) scale(7,7) ; transform: scale(0.5); }
+#pic3:hover { -webkit-transform: translate(30px,50px) scale(7,7); transform: scale(0.5); }
+
+/*resum.html 적용스타일*/
+#resume1{width: 100%; height: 80px;}
+#resume_title1{float: left; text-align: center; width: 70%; padding-top: 15px;}
+#resume_title2{float: right; width: 30%;letter-spacing:2px; text-align: left; font-weight: bold;}
+#resume_titlename {font-weight: bold; font-size: 20px;letter-spacing:100px;}
+#my_pic { width: 10em; height: auto;}
+#table_full { width:100%; height: 100%; margin-top: 20px; margin-bottom: 60px;}
+#resume2 {margin-bottom: 15px; border: 2px solid black;border-collapse: collapse;}
+#resume3 {margin-bottom: 15px; border: 2px solid black;border-collapse: collapse;}
+
+#resuem2 table{width: 100%; height: 100%;background:}
+#resuem3 table{width: 100%; height: 100%;background:}
+
+#resume2 td{ width:210px; max-width:210px; height:30px; text-align: center;background: #EEEEEE;}
+#resume3 td{ width:99px; max-width:90px; height:30px; text-align: center;padding: 10px;background: #EEEEEE;}
+#tile table td{font-weight bold;}
+td#title {background: #07A447;font-weight: bold; letter-spacing:5px;}
+p#ment1 {text-align: center; letter-spacing:5px;}
+p#ment2 {text-align: center; letter-spacing:5px;}
+p#ment3 {text-align: right; letter-spacing:5px;}
